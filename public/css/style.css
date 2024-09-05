@@ -1,0 +1,259 @@
+/* Reseteo y estilos básicos */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    max-width: 120px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Estilos principales */
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer optimizado */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Estilos para el catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.catalogo .item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffefa7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(204, 184, 70, 0.2);
+    width: 280px;
+}
+
+.catalogo .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.catalogo .item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.catalogo .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #f4a261;
+    outline: none;
+    box-shadow: 0 0 6px rgba(244, 162, 97, 0.5);
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f4a261;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las imágenes de las secciones */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Estilos para el mensaje de agradecimiento */
+.thank-you-message {
+    background-color: #4a4e69;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.thank-you-message h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.thank-you-message p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .catalogo .item {
+        margin: 10px 0;
+    }
+
+    .catalogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .catalogo .item img {
+        max-width: 100px;
+    }
+}
