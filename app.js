@@ -7,6 +7,10 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Middleware para procesar datos del formulario
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 // Carpeta pública para css,js e imagenes 
 app.use(express.static(path.join(__dirname, 'public')));
 
