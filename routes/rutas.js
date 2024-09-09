@@ -8,8 +8,8 @@ try {
     transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "isai.trauco69@gmail.com", 
-            pass: "jjtx nktj nqgw chho" 
+            user: "", //correo de usuario
+            pass: "" // clave de aplicativo
         }
     });
 } catch (error) {
